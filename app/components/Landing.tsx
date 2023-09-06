@@ -1,17 +1,17 @@
 import Image from "next/image";
-import PFP from "../../public/PFP.jpg";
+import Color_PFP from "../../public/Color_PFP.jpg";
 
 export const Landing = () => {
   return (
-    <div className="h-screen w-screen flex flex-col bg-white">
-      <nav className="sticky top-0 bg-gray-100 text-sm px-10 w-screen justify-between border-b border-gray-500 flex flex-row h-24 items-center text-center">
-        <div className="font-bold text-lg">Sarah Gu</div>
-        <div>About me </div>
+    <div className="h-screen w-screen flex flex-col bg-gradient-to-r from-white via-purple-100 to-yellow-100">
+      <nav className="sticky top-0 bg-white text-sm px-10 w-screen justify-between shadow-lg flex flex-row h-24 items-center text-center rounded-b-lg">
+        <div className="font-bold text-lg">SG</div>
+        <div>About</div>
       </nav>
       <div className=" h-1/2 flex justify-center align-center mt-28">
-        <div className="rounded-full h-80 w-80 p-2 bg-gradient-to-r from-purple-600 to-pink-600 flex justify-center items-center">
+        <div className="rounded-full h-80 w-80 p-2 bg-black flex justify-center items-center shadow-lg">
           <Image
-            src={PFP}
+            src={Color_PFP}
             width={578}
             height={578}
             className="rounded-full h-full w-full"
@@ -20,7 +20,7 @@ export const Landing = () => {
         </div>
       </div>
       <div className="h-1/2 flex flex-col align-center justify-center text-center gap-8">
-        <p className="text-5xl"> Sarah Gu</p>
+        <p className="text-8xl"> Sarah Gu</p>
         <p className="text-3xl">
           {" "}
           Hi! I&apos;m a senior at Columbia University interested in all things
