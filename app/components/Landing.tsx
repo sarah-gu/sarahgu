@@ -20,13 +20,18 @@ export const Landing = () => {
         </div>
       </div>
       <div className="h-1/2 flex flex-col text-center gap-8">
-        <p className="text-8xl"> Sarah Gu</p>
+        <p className="text-6xl"> Sarah Gu</p>
         <p className="text-3xl">
           {" "}
           Hi! I&apos;m a senior at Columbia University interested in all things
-          CS
+          CS.
         </p>
+		<div className ="flex flex-row gap-4 justify-center">
+			<button className="bg-purple-500 hover:bg-purple-300 w-28 h-12 rounded-lg text-white">Resume</button>
+			<button className="bg-purple-500 hover:bg-purple-300 w-28 h-12 rounded-lg text-white">Projects</button>
+		</div>
       </div>
+
     </div>
   );
 };
